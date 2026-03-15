@@ -5,11 +5,19 @@ require_once(__DIR__ . "/../includes/header.php");
 <main>
 <section class="about-section">
 
+<!-- Floating Background Icons -->
+<i class="bg-icon apple fas fa-apple-alt"></i>
+<i class="bg-icon football fas fa-football-ball"></i>
+<i class="bg-icon star fas fa-star"></i>
+
+<i class="bg-icon apple small fas fa-apple-alt"></i>
+<i class="bg-icon star small fas fa-star"></i>
+<i class="bg-icon football small fas fa-football-ball"></i>
+
     <div class="about-left">
         <div class="about-slideshow">
-            <img src="/school-management-system/public/images/GroupPic.jpg" class="slide active">
-            <img src="/school-management-system/public/images/GroupPic2.jpg" class="slide">
-        
+            <img src="<?= $base_url ?>/images/GroupPic.jpg" class="slide active">
+            <img src="<?= $base_url ?>/images/GroupPic2.jpg" class="slide">
         </div>
     </div>
     

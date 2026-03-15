@@ -64,12 +64,17 @@ require_once(__DIR__ . "/../../includes/header.php");
 
 <div id="page-wrapper" class="page-login">
 <section class="login-section">
-    <div class="login-left">
-        <div class="login-left-content">
-            <h2 class="chalky-title">Kid's Journey</h2>
-            <p class="chalky-subtitle">Learning Center</p>
-        </div>
+<div class="login-left">
+
+    <!-- Portrait image -->
+   <img src="<?= $base_url ?>/images/LoginBG.png" class="login-portrait">
+
+    <div class="login-left-content">
+        <h2 class="chalky-title">Kid's Journey</h2>
+        <p class="chalky-subtitle">Learning Center</p>
     </div>
+
+</div>
 
     <div class="login-right">
         <div class="login-form-container">

@@ -4,7 +4,15 @@ require_once(__DIR__ . "/../includes/header.php");
 
 <main>
 <section class="services-section" id="page1">
-    <h1 class="section-title"><span class="highlight">Services</span> Provided</h1>
+
+<div class="shape circle"></div>
+<div class="shape circle small"></div>
+<div class="shape square"></div>
+<div class="shape square small"></div>
+<div class="shape triangle"></div>
+<div class="shape triangle small"></div>
+
+<h1 class="section-title"><span class="highlight">Services</span> Provided</h1>
     <div class="title-underline"></div>
 
     <div class="services-grid">
@@ -42,8 +50,15 @@ require_once(__DIR__ . "/../includes/header.php");
 
 <!-- PAGE 2 -->
 <section class="services-section" id="page2" style="display:none;">
-    
-    <h1 class="section-title"><span class="highlight">Services</span> Provided</h1>
+
+<div class="shape circle"></div>
+<div class="shape circle small"></div>
+<div class="shape square"></div>
+<div class="shape square small"></div>
+<div class="shape triangle"></div>
+<div class="shape triangle small"></div>
+
+<h1 class="section-title"><span class="highlight">Services</span> Provided</h1>
     <div class="title-underline"></div>
 
     <div class="services-grid">
@@ -91,12 +106,6 @@ require_once(__DIR__ . "/../includes/header.php");
 </div>
 
 <script>
-// Pagination
-function showPage(page){
-    document.getElementById('page1').style.display = (page === 1) ? 'block' : 'none';
-    document.getElementById('page2').style.display = (page === 2) ? 'block' : 'none';
-}
-
 // Open Modal
 /* ================================
 SERVICES PAGE

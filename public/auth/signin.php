@@ -1,7 +1,7 @@
 <?php 
 require_once(__DIR__ . "/../../includes/header.php");
 
-$base_url = "/school-management-system/public"; // BASE URL
+$base_url = "/public"; // BASE URL
 ?>
 
 <section class="signin-section">
