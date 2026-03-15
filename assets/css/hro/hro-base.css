@@ -331,7 +331,7 @@ nav a.active { background: #7b1a1a; color: white; }
 
 .page-hero {
   background: linear-gradient(135deg,#f8f9fa,#e9ecef);
-  background-image: url('../../public/images/HomeBG.jpg');
+  background-image: url('assets/images/HomeBg.PNG');
   background-size: cover; background-position: center;
   padding: 32px 36px 24px; position: relative;
 }
