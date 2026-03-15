@@ -6,7 +6,7 @@
     </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="../public/script.js"></script>
 
 <script>
 let slides = document.querySelectorAll(".about-slideshow .slide");

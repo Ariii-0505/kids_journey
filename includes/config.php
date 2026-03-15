@@ -4,14 +4,14 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// ✅ Base URL
-define('BASE_URL', '/school-management-system/public');
+// ✅ Base URL - Points to public folder
+define('BASE_URL', '/public');
 
 // ✅ Database configuration
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'kids_journey');
+define('DB_USER', 'u114409789_kidsjourneyDAT');
+define('DB_PASS', 'kidsJourneyData@123');
+define('DB_NAME', 'u114409789_kids_journey');
 
 // ✅ SMTP Configuration for Gmail
 define('SMTP_HOST', 'smtp.gmail.com');
@@ -22,7 +22,10 @@ define('SMTP_USERNAME', 'kidsjourney20@gmail.com');
 define('SMTP_PASSWORD', 'uassonsbajcgyvou');
 define('SMTP_FROM_EMAIL', 'kidsjourney20@gmail.com');
 define('SITE_NAME', "Kid's Journey Learning Center");
-define('SITE_URL', 'http://localhost');
+// ✅ Auto-detect domain for production
+$scheme = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+define('SITE_URL', $scheme . '://' . $host);
 
 // ✅ Create database connection
 $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
