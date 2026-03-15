@@ -1,0 +1,77 @@
+school-management-system/
+│
+├── assets/
+│   ├── css/
+│   │   ├── global.css
+│   │   ├── superadmin.css
+│   │   ├── finance.css
+│   │   ├── hro.css
+│   │   └── educator.css
+│   │
+│   ├── js/
+│   │   └── sidebar.js
+│   │
+│   └── icons/ │
+│   └── images/
+│
+├── includes/
+│   ├── auth.php
+│   ├── config.php
+│   ├── db.php
+│   ├── educator-sidebar.php
+│   ├── finance-sidebar.php
+│   ├── footer.php
+│   ├── hro-sidebar.php
+│   ├── superadmin-sidebar.php
+│   ├── role-check.php
+│
+├── public/
+│   ├── auth/
+│   │   ├── forgot_password.php
+│   │   ├── login.php
+│   │   ├── logout.php
+│   │   ├── register.php
+│   │   ├── reset_password.php
+│   │   ├── signin.php
+│
+│   ├── superadmin/
+│   │   ├── overview.php
+│   │   ├── activity-logs.php
+│   │   ├── reports.php
+│   │   └── user-access.php
+│   │
+│   ├── finance/
+│   │   ├── dashboard.php
+│   │   ├── transactions.php
+│   │   ├── payments.php
+│   │   ├── services.php
+│   │   └── reports.php
+│   │
+│   ├── hro/
+│   │   ├── dashboard.php
+│   │   ├── employees.php
+│   │   ├── leave-requests.php
+│   │   └── reports.php
+│   │
+│   └── educator/
+│       ├── dashboard.php
+│       ├── students.php
+│       ├── grades.php
+│       └── reports.php
+│   ├── about.php
+│   ├── contact.php
+│   ├── db_test.php
+│   ├── educators.php
+│   ├── examples.jpg
+│   ├── index.php
+│   ├── leaders.php
+│   ├── professionals.pfp
+│   ├── script.js
+│   ├── services.php
+│   ├── setup.sql
+│   ├── style.css
+│
+├── sql/
+│   └── database.sql
+│
+└── uploads/
