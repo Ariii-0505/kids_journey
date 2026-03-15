@@ -1,0 +1,592 @@
+/* ===== PAGE-SPECIFIC STYLES ONLY =====
+   Sidebar styles come from hro-base.css
+   ===================================== */
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 30px;
+  margin-left: 240px;
+  min-height: 100vh;
+}
+
+.header h1 {
+  margin-bottom: 5px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+td {
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* BADGES */
+.badge {
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.badge.pending {
+  background: #fde68a;
+  color: #92400e;
+}
+
+.badge.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge.inactive {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge.suspended {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  cursor: pointer;
+}
+
+.btn-danger {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.btn:hover {
+  background: #f3f4f6;
+}
+
+
+/* TABS */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0 10px;
+}
+
+.tab {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #f3f4f6;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tab.active {
+  background: #ef4444;
+  color: white;
+}
+
+
+
+/* TAB CONTENT */
+.tab-content {
+  display: none;
+  animation: fadeSlide 0.25s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* =========================
+   TABLE POLISH
+========================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+td {
+  font-size: 14px;
+}
+
+/* PILLED TABS */
+.tabs {
+  display: inline-flex;
+  gap: 8px;
+  background: #f3f4f6;
+  padding: 6px;
+  border-radius: 12px;
+  margin: 16px 0 24px;
+}
+
+.tab-pill {
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #6b7280;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.tab-pill:hover {
+  color: #111827;
+}
+
+.tab-pill.active {
+  background: #ffffff;
+  color: #111827;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+
+/* TAB CONTENT */
+.tab-content {
+  display: none;
+  animation: fade 0.25s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.page-header p {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* =========================
+   MAIN CARD CONTAINER
+========================= */
+.dashboard-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   STATS GRID
+========================= */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* INDIVIDUAL STAT CARD */
+.stat-card {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TABLE */
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.activity-table th {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 14px;
+  color: #6b7280;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.activity-table td {
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* =========================
+   ENROLL BUTTON
+========================= */
+.enroll-btn {
+  background: #ef4444;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.enroll-btn:hover {
+  background: #dc2626;
+}
+
+/* =========================
+   ENROLLMENT LIST
+========================= */
+.enrollment-item {
+  background: #ecfeff;
+  border: 1px solid #a5f3fc;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.enrollment-item strong {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.enrollment-item p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* STATUS BADGE */
+.status-badge {
+  background: #dcfce7;
+  color: #166534;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* MODAL OVERLAY */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay.open {
+  display: flex;
+}
+
+/* MODAL BACKGROUND (kept for compatibility) */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* MODAL BOX */
+.modal-content {
+  background: #ffffff;
+  width: 720px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+/* HEADER */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.close-btn {
+  font-size: 22px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+/* FORM */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 80px;
+  resize: none;
+}
+
+.section-title {
+  margin: 25px 0 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* FOOTER */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.cancel-btn {
+  background: #f3f4f6;
+}
+
+.submit-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+}
+
+.submit-btn:hover {
+  background: #dc2626;
+}
+
+/* ALERT BAR */
+.form-alert {
+  display: none;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-alert.show {
+  display: flex;
+}
+
+.alert-icon {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ERROR FIELD */
+.input-error {
+  border: 1px solid #ef4444 !important;
+  background: #fef2f2;
+}
+/* SERVICE BUTTONS */
+.service-buttons {
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  gap: 15px;                 /* spacing between buttons */
+  margin-top: 15px;
+}
+
+.service-btn {
+  background-color: #f37b7b; /* same color for both */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* smooth hover effect */
+}
+
+.service-btn:hover {
+  background-color: #ef4444; /* darker shade on hover */
+}
+
+/* CONFIRMATION OVERLAY */
+.confirm-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.confirm-box{
+background:#fff;
+padding:25px;
+border-radius:10px;
+width:450px;
+max-height:80vh;
+overflow:auto;
+}
+
+.confirm-buttons{
+margin-top:20px;
+display:flex;
+justify-content:flex-end;
+gap:10px;
+}
+
+.confirm-box{
+animation: confirmPop 0.25s ease;
+}
+
+@keyframes confirmPop{
+from{
+opacity:0;
+transform:scale(0.9);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+/* Overlay background */
+.summary-modal {
+  display: none;              /* hidden by default */
+  position: fixed;            /* lock to viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* semi-transparent backdrop */
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  z-index: 2000;              /* above sidebar and content */
+}
+
+/* Modal content box */
+.summary-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;               /* adjust size */
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.summary-content{
+  background:#fff;
+  padding:25px;
+  border-radius:10px;
+  width:500px;
+}
+
+.summary-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-bottom:15px;
+}
+
+.summary-table th,
+.summary-table td{
+  border:1px solid #ddd;
+  padding:8px;
+  text-align:center;
+}
+
+.summary-buttons{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+}
